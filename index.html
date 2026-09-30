@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swetha Sreedharan Nambiar | UI/UX Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f1fb;--ink:#191a28;--mute:#666a80;--card:#fff;--line:#e1def0;--acc:#4b3bff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13141f;--ink:#efeffb;--mute:#9a9db4;--card:#1e2030;--line:#2c2f44;--acc:#9a8fff}}
+:root[data-theme="dark"]{--bg:#13141f;--ink:#efeffb;--mute:#9a9db4;--card:#1e2030;--line:#2c2f44;--acc:#9a8fff}
+*,*:before,*:after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 "DM Sans",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+.logo{font:700 18px "Bricolage Grotesque",sans-serif}
+nav a{margin-left:24px;color:var(--mute);font-weight:500}nav a:hover{color:var(--ink)}
+h1{font:700 clamp(40px,7vw,92px)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;margin:56px 0 10px}
+.sub{color:var(--mute);font-size:20px;margin:0 0 48px}
+.shot{border-radius:28px;background:var(--c);padding:clamp(16px,3vw,40px);display:flex;gap:clamp(12px,2vw,28px);justify-content:center;align-items:center;overflow:hidden}
+.shot video,.shot img{display:block;max-width:100%;border-radius:16px;box-shadow:0 24px 60px rgba(20,10,80,.22)}
+.shot.wide video,.shot.wide img{width:100%}
+.shot.two video{width:calc(50% - 14px)}
+.shot.phone video{height:min(78vh,640px);width:auto}
+.shot.strip{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.shot.strip img{height:min(70vh,560px);width:auto;max-width:none;flex:none;scroll-snap-align:start;border-radius:18px}
+.soon{min-height:320px;width:100%;display:grid;place-items:center;text-align:center;color:var(--mute);border:2px dashed var(--line);border-radius:18px;padding:24px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 4px 0}
+.row h2{font:700 clamp(24px,3vw,32px) "Bricolage Grotesque",sans-serif;margin:0}
+.row span{color:var(--mute);font-size:15px;text-align:right}
+.line{margin:6px 4px 0;color:var(--mute);max-width:44em}
+details{margin:14px 4px 0}
+summary{cursor:pointer;color:var(--acc);font-weight:500;width:fit-content}
+details ul{margin:12px 0 0;padding-left:20px;color:var(--mute);max-width:44em}
+details li{margin:4px 0}
+details a{color:var(--acc);text-decoration:underline}
+.project{padding:0 0 72px}
+.contact{text-align:center;padding:40px 0;border-top:1px solid var(--line)}
+.contact h2{font:700 clamp(32px,5vw,60px)/1.05 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em;margin:36px 0 24px}
+.btn{display:inline-block;margin:6px;padding:13px 26px;border-radius:99px;background:var(--acc);color:#fff;font-weight:500}
+.btn.alt{background:none;color:var(--ink);border:1px solid var(--line)}
+:root[data-theme="dark"] .btn:not(.alt){color:#13141f}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn:not(.alt){color:#13141f}}
+footer{text-align:center;color:var(--mute);font-size:14px;padding-bottom:36px}
+@media(max-width:720px){.shot.two{flex-direction:column}.shot.two video{width:100%}nav a{margin-left:14px}.row{flex-direction:column;gap:2px}.row span{text-align:left}}
+</style></head>
+<body><div class="wrap">
+<header><a class="logo" href="#top">Swetha S. Nambiar</a><nav><a href="#work">Work</a><a href="#contact">Contact</a></nav></header>
+<main id="top">
+<h1>Swetha Sreedharan Nambiar</h1>
+<p class="sub">UI/UX designer · Canada</p>
+<section id="work" aria-label="Selected work">
+
+<article class="project">
+ <div class="shot wide" style="--c:#dfe3ff"><video src="assets/sbi-yono.mp4" autoplay muted loop playsinline controls aria-label="SBI Yono money transfer redesign"></video></div>
+ <div class="row"><h2>SBI Yono</h2><span>Mobile banking app</span></div>
+ <p class="line">Money transfer redesigned into three clear steps: enter, review, done.</p>
+ <details><summary>Case study</summary><ul>
+  <li>Problem: testing with 8 university students gave the app a score of 22 out of 100 (under 68 means hard to use), with a crowded home screen, too many pages to send money, and freezing.</li>
+  <li>What I did: removed ads, put the transfer on one page, and added a review screen, a separate OTP screen and a clear success screen.</li>
+  <li>Targets: score above 70 and send money 45% faster. These are estimates that still need a second round of testing.</li></ul></details>
+ <div class="shot wide" style="--c:#efe9fb;margin-top:20px"><img src="assets/sbi-screens.jpg" alt="Four redesigned SBI Yono screens: transfer, review, OTP, success" loading="lazy"></div>
+</article>
+
+<article class="project">
+ <div class="shot two" style="--c:#cfe6d6"><video src="assets/meadow-new.mp4" autoplay muted loop playsinline aria-label="Meadow Guard new locker flow"></video><video src="assets/meadow-existing.mp4" autoplay muted loop playsinline aria-label="Meadow Guard existing locker flow"></video></div>
+ <div class="row"><h2>Meadow Guard</h2><span>Smart locker · Team project</span></div>
+ <p class="line">A locker kiosk for Edinburgh's Meadows, designed to feel part of the park.</p>
+ <details><summary>Case study</summary><ul>
+  <li>Problem: there is nowhere safe to leave belongings in the park, and people said trust mattered more than convenience.</li>
+  <li>What I did: interviewed 5 people on site, then made a persona, storyboard, nature-led moodboard and prototype with PIN and Face ID.</li>
+  <li>Result: usability score of 94 out of 100, and every tester preferred the nature-led look.</li></ul></details>
+ <div class="shot wide" style="--c:#dcefe2;margin-top:20px"><img src="assets/locker-new.jpg" alt="New locker flow screens" loading="lazy"></div>
+</article>
+
+<article class="project">
+ <div class="shot phone" style="--c:#ffe3d1"><video src="assets/chatbot.mp4" autoplay muted loop playsinline controls aria-label="Future is One chatbot walkthrough"></video></div>
+ <div class="row"><h2>Future is One chatbot</h2><span>Real estate · Mobile-first</span></div>
+ <p class="line">A sales bot that shows homes first and asks for contact details last.</p>
+ <details><summary>Case study</summary><ul>
+  <li>Problem: people hate typing, the old bot opened blank, and it asked for a phone number before showing any property.</li>
+  <li>What I did: four location buttons (Hick's Law), large thumb-sized buttons (Fitts's Law), and property details before the form (progressive disclosure).</li>
+  <li>Built with the Sales Team, using what they heard in real customer conversations. <a href="https://futureisone.com/" rel="noopener">See the live site</a></li></ul></details>
+</article>
+
+<article class="project">
+ <div class="shot strip" style="--c:#dff0d4"><img src="assets/eco-01.jpg" alt="EcoSort splash" loading="lazy"><img src="assets/eco-03.jpg" alt="EcoSort start screen" loading="lazy"><img src="assets/eco-08.jpg" alt="EcoSort home" loading="lazy"><img src="assets/eco-13.jpg" alt="EcoSort sorted confirmation" loading="lazy"><img src="assets/eco-14.jpg" alt="EcoSort voice assistant" loading="lazy"><img src="assets/eco-19.jpg" alt="EcoSort challenges" loading="lazy"></div>
+ <div class="row"><h2>EcoSort</h2><span>Healthcare waste app</span></div>
+ <p class="line">Voice-guided waste sorting for hospital staff, built to work for everyone, sighted or not.</p>
+ <details><summary>Case study</summary><ul>
+  <li>Problem: hospital staff are always in a rush, and wrong disposal puts people and the environment at risk. I interviewed doctors, nurses and cleaning staff and observed hospital wards.</li>
+  <li>What I did: a map that finds the nearest bin within 100 m over hospital Wi-Fi, a hands-free voice assistant for visually impaired staff, and weekly challenges with points.</li>
+  <li>What didn't work: Bluetooth (range too short) and a waste scanner (too slow), so I dropped both.</li></ul></details>
+</article>
+
+<article class="project">
+ <div class="shot wide" style="--c:#d8f1ee"><div class="soon">Add EcoTech screenshots here<br>Solar Roof website</div></div>
+ <div class="row"><h2>EcoTech Solar Roof</h2><span>Website · Team project</span></div>
+ <p class="line">A solar tile website that is simple for sceptics and credible for tech fans.</p>
+ <details><summary>Case study</summary><ul>
+  <li>Problem: solar is jargon-heavy and dominated by big brands, so trust and price clarity were the challenge.</li>
+  <li>What I did: two opposite personas, card sorting for the navigation, three high-fidelity directions, then a questionnaire (6 people) and heuristic review (4 people).</li>
+  <li>Result: a full shop-to-account flow with clear pricing and a turquoise brand. <a href="https://ecotech.framer.website" rel="noopener">See the live site</a></li></ul></details>
+</article>
+
+</section>
+<section id="contact" class="contact">
+ <h2>Let's talk.</h2>
+ <a class="btn" href="mailto:swethas1143@gmail.com">Email</a>
+ <a class="btn alt" href="https://www.linkedin.com/in/your-profile" rel="noopener">LinkedIn</a>
+ <a class="btn alt" href="#">Resume</a>
+</section>
+</main>
+<footer>© 2026 Swetha Sreedharan Nambiar</footer>
+</div></body></html>
